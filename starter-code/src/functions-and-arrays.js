@@ -146,6 +146,46 @@ var wordsCount = [
   'disobedience',
   'matter'
 ];
+let howManyTimes=(arr,word)=>{
+  let aux=0;
+  if(arr.length===0)return false
+  else{
+    for(i=0;i<=arr.length;i++){
+      if(doesWordExist(arr,word)) aux++
+
+    }
+    // switch(aux){
+    //   case 1:
+    //       console.log(aux)
+    //     return 1
+    //   break
+    //   case 0:
+    //       console.log(aux)
+    //     return 0
+    //   break
+    //   case 5:
+    //     console.log(aux)
+    //     return 5
+    //   break
+
+    //   default:{
+    //     console.log(aux)
+    //    return aux
+    //   }  
+    // }
+    console.log("auxiliar: "+aux)
+    if(aux===5)return 5
+    if(aux>2){ return aux
+   
+     } else if (aux> 2) {return aux
+     } else if(aux=== 0){ return 0
+     }else if(aux== 5){ return 5
+     }
+  }
+  
+    
+}
+howManyTimes(wordsCount,"")
 // Bonus Quest
 
 var matrix = [
