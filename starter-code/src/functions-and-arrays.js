@@ -105,12 +105,16 @@ var wordsUnique = [
   'bring'
 ];
 function uniquifyArray(arr){
-  let arr2=[]
-  arr.forEach((e)=>{
-    if(arr2.indexOf(e)==-1)arr2.push(e)
-
-  })
- return (arr2)
+  if(arr.length===0)return undefined
+  else{
+    let arr2=[]
+    arr.forEach((e)=>{
+      if(arr2.indexOf(e)==-1)arr2.push(e)
+  
+    })
+   return (arr2)
+  }
+  
 }
 uniquifyArray(wordsUnique)
 // Finding Elements
@@ -124,8 +128,8 @@ var wordsFind = [
   'truth',
   'disobedience'
 ];
-let doesWordExist = (arr,word)=>{ arr.includes(word)
-}
+let doesWordExist = (arr,word)=> arr.includes(word)
+
 
 doesWordExist(wordsFind,"")
 // Counting Repetion
