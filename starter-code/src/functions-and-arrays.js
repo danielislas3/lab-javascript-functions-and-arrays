@@ -152,8 +152,9 @@ let howManyTimes=(arr,word)=>{
   else{
     for(i=0;i<=arr.length;i++){
       if(doesWordExist(arr,word)) aux++
+      console.log(aux)
+    }  
 
-    }
     // switch(aux){
     //   case 1:
     //       console.log(aux)
@@ -173,19 +174,21 @@ let howManyTimes=(arr,word)=>{
     //    return aux
     //   }  
     // }
-    console.log("auxiliar: "+aux)
+   
     if(aux===5)return 5
+    if(aux===1)return 1
     if(aux>2){ return aux
    
      } else if (aux> 2) {return aux
      } else if(aux=== 0){ return 0
-     }else if(aux== 5){ return 5
+     }else if(aux== 5){ return "five"
      }
-  }
-  
+     console.log("asdasdasd:"+aux)
+      }
+    
     
 }
-howManyTimes(wordsCount,"")
+howManyTimes(wordsCount,"matter")
 // Bonus Quest
 
 var matrix = [
